@@ -12,15 +12,14 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-        renderscriptTargetApi = 21  // Target RenderScript API version (21 or above)
+        renderscriptTargetApi = 21
         renderscriptSupportModeEnabled =
-            true  // Enable support for RenderScript on devices that don't support it natively
-
+            true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
-        release {
+        getByName("release") {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
@@ -44,10 +43,10 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
-    //Glide
+    // Glide dependencies
     implementation(libs.glide)
     annotationProcessor(libs.compiler)
 
-    implementation(project(":blurlibrary"))
+    // Blur-Layout library
     implementation(project(":blurlibrary"))
 }
