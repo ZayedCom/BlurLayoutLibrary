@@ -75,3 +75,11 @@ blurLayout.startBlur();        // Activate the blur effect
 ---
 
 BlurLayout offers a powerful yet straightforward solution for adding a professional touch to your app’s design. Enjoy enhanced aesthetics and smooth performance with minimal effort.
+
+Below is a demstration of the library being used on UI elements to blur the background.
+
+<p align="center">
+  <img src="blur 01.gif" alt="Blur effect applied on still image file" width="45%" style="margin-right: 10px;">
+  <img src="blur 02.gif" alt="Blur effect applied on animatied image file" width="45%">
+</p>
+
