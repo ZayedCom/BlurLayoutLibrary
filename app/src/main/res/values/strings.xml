@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Blur Layout Library</string>
+    <string name="blur">Blur</string>
+    <string name="blur_off">Blur Off</string>
+    <string name="blur_on">Blur On</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- BlurLayout with background content -->
+    <net.app.nfusion.blurlibrary.BlurLayout
+        android:id="@+id/blur_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="The background image to blur"
+            android:scaleType="centerCrop"
+            tools:ignore="HardcodedText" />
+    </net.app.nfusion.blurlibrary.BlurLayout>
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="150dp"
+        android:progressBackgroundTint="@color/design_default_color_primary"
+        android:progressTint="?android:attr/colorMultiSelectHighlight"
+        android:thumbTint="?android:attr/colorMultiSelectHighlight" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="@string/previous"
+            tools:ignore="HardcodedText" />
+
+        <ToggleButton
+            android:id="@+id/blur_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:backgroundTint="?android:attr/colorMultiSelectHighlight"
+            android:checked="false"
+            android:text="@string/blur"
+            android:textColor="@color/design_default_color_primary"
+            android:textOff="@string/blur_off"
+            android:textOn="@string/blur_on" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/next" />
+    </LinearLayout>
+
+</FrameLayout>
