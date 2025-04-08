@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "net.app.nfusion.blurlayoutlibrary"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "net.app.nfusion.blurlayoutlibrary"
         minSdk = 21
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
         renderscriptTargetApi = 21
