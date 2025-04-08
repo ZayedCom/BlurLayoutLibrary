@@ -26,7 +26,21 @@ Enhance your app's visual appeal by adding dynamic blur effects to your UI. Blur
 
 ### 1. Add BlurLayout to Your Project
 
-Include the BlurLayout library in your project as a dependency.
+Add this to your gradle file.
+
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+And include the BlurLayout library in your project as a dependency.
+
+	dependencies {
+	        implementation 'com.github.ZayedCom:BlurLayoutLibrary:Tag'
+	}
 
 ### 2. Integrate in Your XML Layout
 
